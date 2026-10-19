@@ -6,3 +6,8 @@ spring:
       - optional:file:.env[.properties]
       - classpath:core.yaml
 
+
+# 비어 있으면 관리자 계정 생성 생략
+admin:
+  email: ${ADMIN_EMAIL:}
+  password: ${ADMIN_PASSWORD:}

@@ -37,5 +37,9 @@ public class User {
 		this.createdAt = LocalDateTime.now();
 	}
 
+	public void promoteToAdmin() {
+		this.role = Role.ADMIN;
+	}
+
 	public enum Role { USER, ADMIN }
 }
